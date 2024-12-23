@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Analytics Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="dashboard">
+    <!-- Header Section -->
+    <header>
+      <h1>Analytics Dashboard</h1>
+    </header>
+
+    <!-- KPI Section -->
+    <section class="kpi-section">
+      <div class="kpi">
+        <h2>Total Sales</h2>
+        <p>$50,000</p>
+      </div>
+      <div class="kpi">
+        <h2>New Customers</h2>
+        <p>320</p>
+      </div>
+      <div class="kpi">
+        <h2>Customer Retention</h2>
+        <p>85%</p>
+      </div>
+    </section>
+
+    <!-- Filters -->
+    <section class="filter-section">
+      <label for="data-filter">Filter by:</label>
+      <select id="data-filter">
+        <option value="week">Last Week</option>
+        <option value="month">Last Month</option>
+        <option value="year">Last Year</option>
+      </select>
+    </section>
+
+    <!-- Charts Section -->
+    <section class="chart-section">
+      <div class="chart-container">
+        <canvas id="salesChart"></canvas>
+      </div>
+      <div class="chart-container">
+        <canvas id="customerChart"></canvas>
+      </div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
